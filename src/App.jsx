@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 import Navbar from './components/Navbar';
@@ -70,6 +70,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/cranes" element={<Navigate to="/demo/cranes" replace />} />
           <Route path="/demo/cranes" element={<CranesDemo />} />
         </Routes>
       </Layout>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ExternalLink, ArrowRight, BarChart3, Users, FileText, Settings, MessageSquare, Sparkles, LayoutDashboard, Send } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
@@ -137,9 +138,9 @@ const Projects = () => {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <a href="/demo/cranes" className="flex items-center gap-2 px-8 py-4 rounded-xl btn-primary font-semibold hover:shadow-lg transition-all group">
+                <Link to="/demo/cranes" className="flex items-center gap-2 px-8 py-4 rounded-xl btn-primary font-semibold hover:shadow-lg transition-all group">
                   <ExternalLink size={18} /> View Demo <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
